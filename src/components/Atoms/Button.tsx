@@ -17,7 +17,7 @@ export const Button = ({ children, variant = 'primary', className, ...rest }: IB
 
 	return (
 		<button
-			className={`w-2/3 h-10 brightness-100 hover:brightness-90 hover:shadow-lg transition-all ease-in-out duration-300 rounded-lg ${handlerVariant[variant]} ${className} ${rest.disabled ? 'opacity-50 cursor-not-allowed bg-gray-300' : ''
+			className={`w-2/3 h-10 brightness-100 hover:brightness-90 hover:shadow-lg transition-all ease-in-out duration-300 rounded-lg ${handlerVariant[variant as keyof typeof handlerVariant]} ${className} ${rest.disabled ? 'opacity-50 cursor-not-allowed bg-gray-300' : ''
 				}`}
 			{...rest}
 		>
