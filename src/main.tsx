@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import 'tw-elements';
 import './index.css'
+import { RoutesApp } from './Routes/RoutesApp';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <RoutesApp http={{}} />
   </React.StrictMode>
 )
