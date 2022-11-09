@@ -1,5 +1,6 @@
 const config = {
-	api: 'https://api-dev.voary.io',
+	//api: 'http://localhost:3000',
+	api: 'https://api-telefon.herokuapp.com',
 };
 
 export default config;

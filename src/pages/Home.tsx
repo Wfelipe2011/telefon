@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Button } from '../components/Atoms/Button';
 import { Input } from '../components/Atoms/Input';
+import config from '../config';
 
 interface IAddress {
     street: string;
@@ -19,7 +20,7 @@ export const Home = () => {
         e.preventDefault();
         try {
 
-            const res = await fetch(`http://127.0.0.1:3000/api/address`, {
+            const res = await fetch(`${config.api}/v1/search`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
